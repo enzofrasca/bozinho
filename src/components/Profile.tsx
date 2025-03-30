@@ -1,5 +1,5 @@
 import * as Tooltip from '@radix-ui/react-tooltip'
-import ProfilePicture from '/assets/profile-picture.webp'
+import ProfilePicture from '/assets/profile-video.mp4'
 
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card'
 import { contacts } from '@/constants/contacts'
@@ -16,12 +16,16 @@ export const Profile = () => {
     <div className='flex flex-col w-full gap-5 lg:w-3/12 md:flex-row lg:flex-col'>
       <aside className='flex flex-col w-full p-3 border rounded-lg lg:p-5 border-border bg-background lg:w-auto'>
         <div>
-          <img
+          <video
             src={ProfilePicture}
             alt={'Guilherme Viana'}
             className='object-contain mx-auto rounded-lg lg:w-full lg:h-auto'
             width={292}
             height={292}
+            autoPlay // opcional
+            loop // opcional
+            muted // opcional
+            playsInline // opcional
           />
 
           <div className='justify-end hidden -mt-2 -mr-1 lg:flex'>
