@@ -18,16 +18,15 @@ export const Profile = () => {
         <div>
           <video
             src={ProfilePicture}
-            alt={'Guilherme Viana'}
+            title={'Guilherme Viana'} // ou aria-label="Guilherme Viana"
             className='object-contain mx-auto rounded-lg lg:w-full lg:h-auto'
             width={292}
             height={292}
-            autoPlay // opcional
-            loop // opcional
-            muted // opcional
-            playsInline // opcional
+            autoPlay
+            loop
+            muted
+            playsInline
           />
-
           <div className='justify-end hidden -mt-2 -mr-1 lg:flex'>
             <span className='flex items-center w-3 h-3'>
               <span className='absolute inline-flex w-3 h-3 bg-green-200 rounded-full opacity-75 animate-ping' />
